@@ -1,0 +1,19 @@
+---
+staging:
+    elasticsearch_url: <elasticsearch URL>
+    bucket_name: <bucket name>
+    base_path: <base path folder name e.g backups>
+    backup_retention_days: 15 # cleanup  will delete indexes older than this period
+    region: us-east-1
+    backup_index: logstash-
+    start_date:     # Optional YYYY.m.d format e.g 2018.04.10
+    restore_date:   # YYYY.m.d 2018.04.08
+production:
+    elasticsearch_url: <elasticsearch URL>
+    bucket_name: <bucket name>
+    base_path: <base path folder name e.g backups>
+    backup_retention_days: 15 # cleanup  will delete indexes older than this period
+    region: us-east-1
+    backup_index: logstash-
+    start_date:     # Optional YYYY.m.d format e.g 2018.04.10
+    restore_date:   # YYYY.m.d 2018.04.08
